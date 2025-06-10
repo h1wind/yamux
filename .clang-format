@@ -1,0 +1,38 @@
+# Copyright (c) 2025 hi <hi@nosec.me>
+# .clang-format
+
+BasedOnStyle: LLVM
+
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignArrayOfStructures: Left
+AlignAfterOpenBracket: Align
+
+AllowShortLambdasOnASingleLine: All
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+# 低版本 clang-format 不支持 BinPackLongBracedList
+# BinPackLongBracedList: false
+
+BreakBeforeBinaryOperators: None
+BreakStringLiterals: false
+BinPackParameters: true
+BinPackArguments: true
+PenaltyReturnTypeOnItsOwnLine: 1000
+PenaltyBreakAssignment: 1000
+PenaltyBreakBeforeFirstCallParameter: 1000
+BracedInitializerIndentWidth: 4
+IndentWidth: 4
+ContinuationIndentWidth: 4
+AccessModifierOffset: -4
+IndentGotoLabels: true
+SortIncludes: Never
+ColumnLimit: 0
+FixNamespaceComments: true
+ReflowComments: false
+
+ForEachMacros:
+  - SIMPLEQ_FOREACH
+  - SIMPLEQ_FOREACH_SAFE

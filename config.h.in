@@ -1,0 +1,12 @@
+/* 
+ * Copyright (c) 2025 hi <hi@nosec.me>
+ * config.h.in 
+ */
+
+#ifndef YAMUX_CONFIG_H
+#define YAMUX_CONFIG_H
+
+#define PROJECT_VERSION "@PROJECT_VERSION@"
+#define PROJECT_NAME    "@PROJECT_NAME@"
+
+#endif /* YAMUX_CONFIG_H */
