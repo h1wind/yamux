@@ -18,8 +18,9 @@
 #include "bio.h"
 
 typedef struct stream {
-    RB_ENTRY(stream)
-    entry;
+    // clang-format off
+    RB_ENTRY(stream) entry;
+    // clang-format on
     struct session *session;    /* stream session */
     uint8_t state;              /* stream state */
     uint32_t id;                /* stream id */
